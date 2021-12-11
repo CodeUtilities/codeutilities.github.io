@@ -5,7 +5,7 @@
     font-style: inherit;
     font-size: inherit;
     font-weight: inherit;
-    font-family: inherit;
+    font-family: Abel;
     line-height: inherit;
     letter-spacing: inherit;
     text-transform: inherit;
@@ -25,6 +25,10 @@
     padding: 10px 30px;
     border-radius: 0;
     align-self: flex-start;
+}
+
+a,p,strong,span {
+    font-family: Abel;
 }
 
 .u-btn-round {

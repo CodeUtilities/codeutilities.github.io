@@ -1,0 +1,132 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: url("images/wallpaper.jpg");
+    font-family: "Poppins", sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-card {
+    background: #ccccff55;
+    backdrop-filter: blur(20px);
+    color: white;
+    width: 30em;
+    height: 25em;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: all .2s ease;
+}
+
+.main-card:hover {
+    background: #ccccff65;
+    backdrop-filter: blur(24px);
+    transform: scale(1.025);
+    border: 1px solid #ccccff99;
+}
+
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+.titles {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 45px;
+    margin: 0;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.subtitle {
+    margin: 0;
+    margin-bottom: 2em;
+    font-size: 20px;
+    text-align: center;
+}
+
+a:not(.link) {
+    text-decoration: none;
+}
+
+
+a {
+    width: fit-content;
+    color: #c0e0eb;
+    transition: transform .15s ease;
+    display: inline-block;
+}
+
+p {
+    margin: 0;
+}
+
+.link:hover {
+    transform: translateY(-3px);
+}
+
+.link:active {
+    transform: translateY(0px);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(1);
+}
+
+
+button {
+    background: rgb(197,68,198);
+    background: linear-gradient(90deg, rgba(197,68,198,1) 0%, rgba(98,0,255,1) 100%);
+    border: none;
+    font-size: 20px;
+    color: white;
+    padding: 5px;
+
+    border-radius: 4px;
+    margin: 5px;
+    cursor: pointer;
+    user-select: none;
+
+    transition: transform .15s ease;
+    width: 200px;
+}
+
+.btn-download {
+    padding: 15px;
+    
+}
+
+.sub {
+    display: block;
+    font-size: 12px;
+}

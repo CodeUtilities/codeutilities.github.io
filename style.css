@@ -16,7 +16,7 @@ body {
 }
 
 .main-card {
-    background: #ccccff55;
+    background: #34343d94;
     backdrop-filter: blur(20px);
     color: white;
     width: 30em;
@@ -26,13 +26,14 @@ body {
     flex-direction: row;
     align-items: center;
     transition: all .2s ease;
+    border-color: #28283099;
 }
 
 .main-card:hover {
-    background: #ccccff65;
+    background: #34343dbb;
     backdrop-filter: blur(24px);
     transform: scale(1.025);
-    border: 1px solid #ccccff99;
+    border: 1px solid #28283099;
 }
 
 
@@ -70,21 +71,13 @@ a:not(.link) {
 
 a {
     width: fit-content;
-    color: #c0e0eb;
+    color: #6fdbff;
     transition: transform .15s ease;
     display: inline-block;
 }
 
 p {
     margin: 0;
-}
-
-.link:hover {
-    transform: translateY(-3px);
-}
-
-.link:active {
-    transform: translateY(0px);
 }
 
 .buttons {
@@ -96,7 +89,7 @@ p {
 
 
 button:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 button:active {
@@ -105,8 +98,6 @@ button:active {
 
 
 button {
-    background: rgb(197,68,198);
-    background: linear-gradient(90deg, rgba(197,68,198,1) 0%, rgba(98,0,255,1) 100%);
     border: none;
     font-size: 20px;
     color: white;
@@ -122,8 +113,20 @@ button {
 }
 
 .btn-download {
+    background: linear-gradient(150deg, rgba(56,160,247,1) 0%, rgba(8,68,144,1) 100%);
     padding: 15px;
-    
+}
+
+.btn-docs {
+    background: linear-gradient(150deg, rgba(238,169,56,1) 0%, rgba(227,68,24,1) 100%);
+}
+
+.btn-discord {
+    background: linear-gradient(150deg, rgba(44,193,250,1) 0%, rgba(18,98,215,1) 100%);
+}
+
+.btn-src {
+    background: linear-gradient(150deg, rgba(168,93,255,1) 0%, rgba(80,13,162,1) 100%);
 }
 
 .sub {

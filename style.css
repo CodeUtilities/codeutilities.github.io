@@ -60,7 +60,7 @@ body {
 .subtitle {
     margin: 0;
     margin-bottom: 2em;
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
 }
 
@@ -113,23 +113,64 @@ button {
 }
 
 .btn-download {
-    background: linear-gradient(150deg, rgba(56,160,247,1) 0%, rgba(8,68,144,1) 100%);
     padding: 15px;
 }
 
-.btn-docs {
+.btn-download:not(.nogradient) {
+    background: linear-gradient(150deg, rgba(56,160,247,1) 0%, rgba(8,68,144,1) 100%);
+}
+
+.btn-download.nogradient {
+    background: rgba(8,68,144,1);
+}
+
+.btn-docs:not(.nogradient) {
     background: linear-gradient(150deg, rgba(238,169,56,1) 0%, rgba(227,68,24,1) 100%);
 }
 
-.btn-discord {
+.btn-docs.nogradient {
+    background: rgba(227,68,24,1);
+}
+
+.btn-discord:not(.nogradient) {
     background: linear-gradient(150deg, rgba(44,193,250,1) 0%, rgba(18,98,215,1) 100%);
 }
 
-.btn-src {
+.btn-discord.nogradient {
+    background: rgba(18,98,215,1);
+}
+
+.btn-src:not(.nogradient) {
     background: linear-gradient(150deg, rgba(168,93,255,1) 0%, rgba(80,13,162,1) 100%);
+}
+
+.btn-src.nogradient {
+    background: rgba(80,13,162,1);
 }
 
 .sub {
     display: block;
-    font-size: 12px;
+    font-size: 14px;
+}
+
+#gradient-toggle {
+    position: absolute;
+    left: 15px;
+    bottom: 10px;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    transition: all .2s ease;
+    cursor: pointer;
+}
+
+#gradient-toggle:hover {
+    border-color: #d1d1d1;
+    color: #d1d1d1;
+}
+
+#gradient-toggle i {
+    transform: translateY(5px);
 }
